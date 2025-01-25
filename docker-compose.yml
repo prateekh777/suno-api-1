@@ -10,3 +10,8 @@ services:
       - ./public:/app/public
     ports:
       - "3000:3000"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    extra_hosts:
+      - "studio-api.prod.suno.com:3.142.188.108"
